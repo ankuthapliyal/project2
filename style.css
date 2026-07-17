@@ -1,0 +1,353 @@
+/* ================================
+   SHREE KULDEVI MANDIR THEME
+   Committee Page Style
+================================ */
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Poppins', sans-serif;
+    background:#fff8ee;
+    color:#333;
+
+}
+
+
+/* Navbar */
+
+.navbar{
+
+    background:linear-gradient(90deg,#8b0000,#d35400);
+    padding:15px 0;
+
+}
+
+
+.navbar-brand{
+
+    font-size:24px;
+    color:#ffd700 !important;
+    font-weight:700;
+
+}
+
+
+.nav-link{
+
+    color:white !important;
+    font-weight:500;
+    margin-left:15px;
+    transition:.3s;
+
+}
+
+
+.nav-link:hover{
+
+    color:#ffd700 !important;
+
+}
+
+
+
+/* Page Heading */
+
+section.bg-light{
+
+    background:
+
+    linear-gradient(
+    rgba(255,215,0,.15),
+    rgba(255,255,255,.7)
+    ),
+    url("../images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+section.bg-light h1{
+
+    font-family:'Tiro Devanagari Hindi',serif;
+    font-size:45px;
+    color:#a00000;
+
+    text-shadow:2px 2px 4px #ddd;
+
+}
+
+
+section.bg-light p{
+
+    font-size:18px;
+    color:#555;
+
+}
+
+
+
+/* Cards */
+
+.card{
+
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+
+    background:#fff;
+
+    transition:.4s;
+
+    border-bottom:5px solid #d4af37;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+
+    0 15px 30px rgba(0,0,0,.25);
+
+}
+
+
+
+/* Main Member Images */
+
+.card-img-top{
+
+    height:280px;
+    object-fit:cover;
+
+}
+
+
+
+.card-body{
+
+    padding:25px;
+
+}
+
+
+
+.card-body h3{
+
+    font-size:22px;
+    color:#b8860b;
+
+    font-weight:700;
+
+}
+
+
+.card-body h5{
+
+    font-size:20px;
+    color:#8b0000;
+
+    margin-top:10px;
+
+}
+
+
+
+.card-body p{
+
+    color:#666;
+    font-size:15px;
+
+}
+
+
+
+/* Member Section */
+
+h2{
+
+    font-family:'Tiro Devanagari Hindi',serif;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Small Member Cards */
+
+.rounded-circle{
+
+    height:120px;
+    width:120px;
+
+    object-fit:cover;
+
+    border:5px solid #d4af37;
+
+    padding:3px;
+
+    background:white;
+
+}
+
+
+
+.col-md-3 .card{
+
+    padding:20px;
+
+    border-radius:25px;
+
+}
+
+
+
+.col-md-3 h5{
+
+    color:#8b0000;
+
+    font-weight:600;
+
+}
+
+
+
+.col-md-3 p{
+
+    color:#777;
+
+}
+
+
+
+/* Golden Divider */
+
+.container:before{
+
+    content:"🪔";
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+    background:
+
+    linear-gradient(90deg,#8b0000,#d35400) !important;
+
+    font-size:16px;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+/* Buttons */
+
+.btn-danger{
+
+    background:#a00000;
+
+    border:none;
+
+}
+
+
+
+.btn-danger:hover{
+
+    background:#d35400;
+
+}
+
+
+
+/* Animation */
+
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+
+section.bg-light h1{
+
+    font-size:32px;
+
+}
+
+
+.navbar-brand{
+
+    font-size:20px;
+
+}
+
+
+.card-img-top{
+
+    height:230px;
+
+}
+
+
+h2{
+
+    font-size:30px;
+
+}
+
+
+}
