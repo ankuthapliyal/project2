@@ -1,0 +1,136 @@
+/*==========================
+      COMMITTEE CARDS
+===========================*/
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    max-width:1300px;
+    margin:40px auto;
+}
+
+.service-card{
+
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.service-card img{
+
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #ff9800;
+    margin-bottom:18px;
+
+}
+
+.service-card h3{
+
+    color:#ff9800;
+    font-size:24px;
+    margin-bottom:8px;
+
+}
+
+.service-card h4{
+
+    color:#444;
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#666;
+    line-height:1.7;
+    margin:8px 0;
+
+}
+
+.service-card i{
+
+    color:#ff9800;
+    margin-right:8px;
+
+}
+
+/*==========================
+      EMAIL BUTTON
+===========================*/
+
+.email-btn{
+
+display:inline-block;
+padding:10px 18px;
+margin-top:15px;
+
+background:#ff9800;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:30px;
+
+font-size:15px;
+
+font-weight:600;
+
+transition:.3s;
+
+width:auto;
+
+}
+
+.email-btn:hover{
+
+background:#e68900;
+
+transform:translateY(-3px);
+
+}
+
+/*==========================
+      RESPONSIVE
+===========================*/
+
+@media(max-width:992px){
+
+.service-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.service-container{
+
+grid-template-columns:1fr;
+
+}
+
+.service-card img{
+
+width:120px;
+height:120px;
+
+}
+
+}
